@@ -320,7 +320,7 @@ vendor/lib64/camera/fdconfigvideolite.bin
 vendor/bin/hvdcp_opti
 
 # CNE
--vendor/app/CneApp/CneApp.apk
+-vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_vendor_symlink
 vendor/bin/cnd
 vendor/lib64/libcne.so
 vendor/lib64/libcneapiclient.so
