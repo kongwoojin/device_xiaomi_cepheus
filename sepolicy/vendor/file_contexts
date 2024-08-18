@@ -39,6 +39,7 @@
 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm                                             u:object_r:vendor_sysfs_hbm:s0
 
 # IR
+/vendor/bin/hw/android\.hardware\.ir-service\.xiaomi                                                   u:object_r:hal_ir_default_exec:s0
 /dev/ir_spi                                                                                            u:object_r:ir_spi_device:s0
 
 # Livedisplay
