@@ -165,6 +165,9 @@ BOARD_USES_METADATA_PARTITION := true
 
 TARGET_USERIMAGES_USE_F2FS := true
 
+# Partitions - reserved size
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+
 # Disable sparse on all filesystem images
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 TARGET_USERIMAGES_SPARSE_EROFS_DISABLED := true
