@@ -1,2 +1,0 @@
-# For diag over socket
-allow kernel self:qipcrtr_socket create;
