@@ -387,6 +387,11 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/partitions/flash_super_dummy.sh:install/bin/flash_super_dummy.sh
 
+PRODUCT_PACKAGES += \
+    vendor_bt_firmware_mountpoint \
+    vendor_dsp_mountpoint \
+    vendor_firmware_mnt_mountpoint
+
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
 
