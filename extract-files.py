@@ -28,6 +28,10 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/lib/libaudioroute_ext.so': blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
+    'vendor/lib/hw/audio.primary.msmnile.so': blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
     'vendor/lib64/hw/camera.qcom.so': blob_fixup()
         .regex_replace(r'libc\+\+\.so', 'libc29.so')
         .remove_needed('libMegviiFacepp-0.5.2.so')
