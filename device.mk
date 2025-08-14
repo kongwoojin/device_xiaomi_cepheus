@@ -275,8 +275,9 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm \
-    vendor.lineage.livedisplay@2.1-service.cepheus
+    vendor.lineage.livedisplay-service.sdm
+
+$(call soong_config_set,livedisplay_sdm,enable_dm,false)
 
 # Logging
 SPAMMY_LOG_TAGS := \
